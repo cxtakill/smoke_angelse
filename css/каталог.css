@@ -1,0 +1,173 @@
+body{
+  font-family: 'open sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+header {
+  width: 100%;
+  background: #000;
+  display: flex;
+}
+.logo {
+   font-family: "Trade Winds", system-ui;
+  color: #BB63D4;
+  font-weight: 900;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 12%;
+}
+
+nav{
+  margin-top: 56px;
+  margin-left: 29%;
+}
+
+.topnav a{
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.topnav a:hover{
+  border-bottom: 3px solid  #BB63D4;
+}
+
+.topnav .icon {
+  display: none;
+
+}
+
+.cards {
+  text-align: center;
+}
+
+.main_button {
+  text-align: center;
+  padding-top: 30px;
+}
+.main_buttons {
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.main_buttons::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.main_buttons:hover::after {
+  transform: scale(4);
+}
+
+.main_buttons:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+.card_image {
+  width: 500px;
+}
+
+.addtocart {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.addtocart:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.addtocart:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.end_buttons {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.end_buttons:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.end_buttons:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.shop {
+  width: 100px;
+  display: flex;
+  position: fixed;
+  margin-left: 1400px;
+}
+
+@media (max-width: 1175px){
+
+.shop{
+  margin-left: 800px;
+}
+.cart-container {
+  font-size: 30px;
+}
+}

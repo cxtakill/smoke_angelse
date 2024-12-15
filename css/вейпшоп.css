@@ -1,0 +1,384 @@
+body{
+  font-family: 'open sans', sans-serif;
+  background-size: cover;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+header {
+  width: 100%;
+  background: #000;
+  display: flex;
+}
+.logo {
+   font-family: "Trade Winds", system-ui;
+  color: #BB63D4;
+  font-weight: 900;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 12%;
+}
+
+nav{
+  margin-top: 56px;
+  margin-left: 29%;
+}
+
+.topnav a{
+  color: #fff;
+  text-align: center;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.topnav a:hover{
+  border-bottom: 3px solid  #BB63D4;
+}
+
+.topnav .icon {
+  display: none;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+main .main_welcome {
+  background: #000;
+  text-align: center;
+  padding: 200px 0 410px 0;
+}
+
+main .main_welcome p{
+color:  #999999;
+font-size: 15px;
+}
+
+main .main_welcome h1{
+color:  #999999;
+font-size: 44px;
+font-weight: 400;
+}
+
+.mycompany {
+   font-family: "Trade Winds", system-ui;
+  color: #BB63D4;
+  font-weight: 700;
+}
+.button_main {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.button_main:before {
+    content: '';
+    background: linear-gradient(45deg, #BB63D4, #999999, #BB63D4);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button_main:active {
+    color: #000
+}
+
+.button_main:active:after {
+    background: transparent;
+}
+
+.button_main:hover:before {
+    opacity: 1;
+}
+
+.button_main:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.vape_img {
+  display: flex;
+  margin-top: -300px;
+}
+
+.xros {
+  display: flex;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: auto;
+  transform: rotate(-20deg);
+}
+
+.boost {
+    transform: rotate(30deg);
+  height: 420px;
+
+}
+
+.glow_welcome {
+  height: 100px;
+  weight: 100px;
+  border-radius: 100px;
+  background-color:  #BB63D4;
+  filter: blur(100px);
+  opacity: 0.2;
+}
+
+.catalog {
+  width: 180px;
+  height: 170px;
+  margin-right: px;
+  margin-bottom: 15px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: 700px;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.card::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+  border-radius: 1.2em;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+  filter: blur(30px);
+}
+
+.card span {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  border-radius: 1em;
+}
+
+.card span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card .content {
+  position: relative;
+  padding: 10px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.card_channel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card_channel:hover {
+  transform: translateY(-20px);
+}
+
+.card_channel::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+  border-radius: 1.2em;
+}
+
+.card_channel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+  filter: blur(30px);
+}
+.channel {
+  display: flex;
+  font-size: 16px;
+  color: white;
+  margin-right: 30px;
+  margin-top: 60px;
+  text-decoration: none;
+}
+
+.card_channel span {
+  color: #fff;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  border-radius: 1em;
+}
+
+.card_channel span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card_channel .channel {
+  position: relative;
+  padding: 10px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.all_card {
+  justify-content: center;
+  display: flex;
+  margin-right: 700px;
+}
+
+.other_about {
+  display: none;
+}
+
+@media (max-width: 1175px){
+  .vape_img {
+    display: none;
+  }
+  header {
+    font-weight: bold;
+  }
+  .modal .button{
+font-size: 30px;
+  }
+  .card {
+    margin-top: 350px;
+    margin-right: -400px;
+  }
+  .other_about {
+    display: contents;
+    display: flex;
+    margin-left: 280px;
+    margin-top: 200px;
+  }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9977;
+  background-color: rgba(0, 0, 0, .3);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  opacity: 0;
+  display: none;
+}
+
+.modal_body {
+  max-width: 500px;
+  padding: 45px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.modal.open {
+  visibility: visible;
+  display: grid;
+  opacity: 1;
+}
+
+.modal.open .modal_body
